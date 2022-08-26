@@ -19,7 +19,9 @@ function Banner() {
             <h1>I'm Nilesh Rathod</h1>
             <h5 className='webDevs'>as a Web Developer</h5>
             <div className='buttons'>
-              <button className='Buttons'>Download CV</button>
+              <a href='./Resume_1.pdf' className='Buttons' download='nrResume'>
+                Download CV
+              </a>
             </div>
             {/* buttons End */}
           </div>
@@ -98,13 +100,14 @@ const BannerContainer = styled.div`
       }
     }
 
-    & button.Buttons {
+    & a.Buttons {
       width: 100%;
       height: 100%;
       border: none;
       font-size: 1.1vw;
-      padding: 0.7rem 0;
+      padding: 0.7rem 1.3rem;
       border-radius: 30px;
+      text-decoration: none;
       background: linear-gradient(
         324deg,
         rgba(240, 178, 175, 1) 20%,
@@ -120,7 +123,7 @@ const BannerContainer = styled.div`
       @media screen and (max-width: 992px) {
         & {
           font-size: 1rem;
-          padding: 0;
+          // padding: 0;
         }
       }
 
