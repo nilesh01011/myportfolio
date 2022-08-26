@@ -105,7 +105,7 @@ const BannerContainer = styled.div`
       height: 100%;
       border: none;
       font-size: 1.1vw;
-      padding: 0.7rem 1.3rem;
+      padding: 0.8rem 1.3rem;
       border-radius: 30px;
       text-decoration: none;
       background: linear-gradient(
@@ -124,6 +124,7 @@ const BannerContainer = styled.div`
         & {
           font-size: 1rem;
           // padding: 0;
+          max-width: 180px;
         }
       }
 
