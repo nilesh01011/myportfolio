@@ -111,6 +111,7 @@ const BannerContainer = styled.div`
       width: 100%;
       height: 100%;
       border: none;
+      text-align: center;
       font-size: 1.1vw;
       padding: 0.8rem 0;
       border-radius: 30px;
