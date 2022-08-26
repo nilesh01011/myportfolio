@@ -86,7 +86,15 @@ const BannerContainer = styled.div`
     height: 45px;
     min-height: 8vh;
     margin-top: 1.8rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 
+    @media screen and (max-width: 1280px) {
+      & {
+        width: 180px;
+      }
+    }
     @media screen and (max-width: 1038px) {
       & {
         min-height: 45px;
@@ -96,7 +104,6 @@ const BannerContainer = styled.div`
     @media screen and (max-width: 992px) {
       & {
         margin-top: 1.5rem;
-        width: 180px;
       }
     }
 
@@ -105,7 +112,7 @@ const BannerContainer = styled.div`
       height: 100%;
       border: none;
       font-size: 1.1vw;
-      padding: 0.8rem 1.3rem;
+      padding: 0.8rem 0;
       border-radius: 30px;
       text-decoration: none;
       background: linear-gradient(
@@ -123,8 +130,6 @@ const BannerContainer = styled.div`
       @media screen and (max-width: 992px) {
         & {
           font-size: 1rem;
-          // padding: 0;
-          max-width: 180px;
         }
       }
 
