@@ -19,7 +19,7 @@ function Banner() {
             <h1>I'm Nilesh Rathod</h1>
             <h5 className='webDevs'>as a Web Developer</h5>
             <div className='buttons'>
-              <a href='./Resume_1.pdf' className='Buttons' download='nrResume'>
+              <a href='./Resume_2.pdf' className='Buttons' download='nrResume'>
                 Download CV
               </a>
             </div>
