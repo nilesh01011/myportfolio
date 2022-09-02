@@ -524,7 +524,7 @@ function Main() {
                     Bachelor in Computer Application <span>(BCA)</span>
                   </div>
                   <div className='main_content'>
-                    Graduate at <span>Kirti M. Doongursee College</span> they
+                    Graduate at <span>NMITD (DES) College</span> they
                     teach us with a, technical skills to enhance a programming
                     languages and we can choices a confortable in specific
                     languages.
