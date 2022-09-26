@@ -1,37 +1,62 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 function Banner() {
   return (
     <BannerContainer>
-      <div className='image_container'>
-        <img src='./images/1.png' height='50px' alt='images' />
-        <img src='./images/2.png' height='30px' alt='images' />
-        <img src='./images/4.png' height='50px' alt='images' />
-        <img src='./images/7.png' height='50px' alt='images' />
-        <img src='./images/5.png' height='50px' alt='images' />
-        <img src='./images/6.png' height='30px' alt='images' />
+      <div className="image_container">
+        <img src="./images/1.png" height="50px" alt="images" />
+        <img src="./images/2.png" height="30px" alt="images" />
+        <img src="./images/4.png" height="50px" alt="images" />
+        <img src="./images/7.png" height="50px" alt="images" />
+        <img src="./images/5.png" height="50px" alt="images" />
+        <img src="./images/6.png" height="30px" alt="images" />
       </div>
-      <div className='container-fluid mt-md-0 mt-sm-5 mt-0 h-100 w-100 d-flex align-align-items-center justify-content-center px-0'>
-        <div className='row w-100 d-flex justify-content-md-between align-items-center gap-md-0 gap-5 mt-md-0 mt-sm-5 mt-0'>
-          <div id='Left' className='col-md-7 col-12 px-0'>
+      <div className="container-fluid mt-md-0 mt-sm-5 mt-0 h-100 w-100 d-flex align-align-items-center justify-content-center px-0">
+        <div className="row w-100 d-flex justify-content-md-between align-items-center gap-md-0 gap-5 mt-md-0 mt-sm-5 mt-0">
+          <div id="Left" className="col-md-7 col-12 px-0">
             <h5>Hello</h5>
             <h1>I'm Nilesh Rathod</h1>
-            <h5 className='webDevs'>as a Web Developer</h5>
-            <div className='buttons'>
-              <a href='./Resume_2.pdf' className='Buttons' download='nrResume'>
+            <h5 className="webDevs">as a Web Developer</h5>
+            <div className="buttons">
+              <a href="./Resume_2.pdf" className="Buttons" download="nrResume">
                 Download CV
               </a>
             </div>
             {/* buttons End */}
+            <div id="social_links">
+              <a
+                href="https://github.com/nilesh01011"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsGithub className="icons" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/nilesh-rathod-0bb62b223/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsLinkedin className="icons" />
+              </a>
+
+              <a
+                href="https://twitter.com/Nilesh1011000/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsTwitter className="icons" />
+              </a>
+            </div>
           </div>
           <div
-            id='Right'
-            className='col-md-5 col-12 px-0 d-flex justify-content-center align-items-center'
+            id="Right"
+            className="col-md-5 col-12 px-0 d-flex justify-content-center align-items-center"
           >
-            <div className='images'>
-              <img src='./images/about_1.png' alt='images' />
-              {/* <img src='./images/banner.png' alt='images' /> */}
+            <div className="images">
+              <img src="./images/about_1.png" alt="images" />
             </div>
           </div>
         </div>
@@ -85,7 +110,7 @@ const BannerContainer = styled.div`
     width: 15vw;
     height: 45px;
     min-height: 8vh;
-    margin-top: 1.8rem;
+    margin: 1.8rem 0;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -103,7 +128,7 @@ const BannerContainer = styled.div`
 
     @media screen and (max-width: 992px) {
       & {
-        margin-top: 1.5rem;
+        margin: 1.5rem 0;
       }
     }
 
@@ -111,7 +136,9 @@ const BannerContainer = styled.div`
       width: 100%;
       height: 100%;
       border: none;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 1.1vw;
       padding: 0.8rem 0;
       border-radius: 30px;
@@ -144,5 +171,11 @@ const BannerContainer = styled.div`
         top: 1px;
       }
     }
+  }
+
+  ${"" /* Buttons End */}
+
+  & #social_links {
+    justify-content: flex-start;
   }
 `;

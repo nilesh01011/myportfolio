@@ -225,10 +225,11 @@ p {
 #social_links a {
   text-decoration: none;
   color: #fff;
+  margin-right: 0.8rem;
 }
 
-#social_links a i {
-  font-size: 24px;
+#social_links a .icons {
+  font-size: 22px;
 }
 
 #nav-tab {
@@ -385,6 +386,6 @@ p {
 }
 
 #footer p {
-  font-weight: 200;
+  font-weight: 300;
   font-family: sans-serif;
 }

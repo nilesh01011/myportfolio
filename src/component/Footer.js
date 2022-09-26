@@ -1,32 +1,40 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 function Footer() {
   return (
-    <FooterContainer id='contact_us'>
+    <FooterContainer id="contact_us">
       <h2>Stay Connected</h2>
-      <div id='footer' className='contact_para'>
+      <div id="footer" className="contact_para">
         <p>Maharashtra, Mumbai</p>
         <h5>nrrathodnr818@gmail.com</h5>
         <p>(+91) 9359872268</p>
       </div>
-      <div id='social_links'>
+      <div id="social_links">
         <a
-          href='https://github.com/nilesh01011'
-          target='_blank'
-          rel='noreferrer'
+          href="https://github.com/nilesh01011"
+          target="_blank"
+          rel="noreferrer"
         >
-          <i className='fab fa-github'></i>
+          <BsGithub className="icons" />
         </a>
-        {/* <a href='facebook'>
-          <i className='fab fa-facebook'></i>
+
+        <a
+          href="https://www.linkedin.com/in/nilesh-rathod-0bb62b223/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsLinkedin className="icons" />
         </a>
-        <a href='instagram'>
-          <i className='fab fa-instagram'></i>
+
+        <a
+          href="https://twitter.com/Nilesh1011000/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsTwitter className="icons" />
         </a>
-        <a href='linked'>
-          <i className='fab fa-linkedin'></i>
-        </a> */}
       </div>
     </FooterContainer>
   );
@@ -58,7 +66,7 @@ const FooterContainer = styled.div`
   }
 
   & p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
@@ -68,6 +76,14 @@ const FooterContainer = styled.div`
 
     & p {
       margin-bottom: 0;
+    }
+  }
+
+  & #social_links{
+    margin-top:0.9rem;
+    
+    & a .icons{
+      font-size: 1rem;
     }
   }
 `;
